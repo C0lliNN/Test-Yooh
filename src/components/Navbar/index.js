@@ -12,9 +12,9 @@ export default function Navbar() {
         <Logo />
       </div>
       <div className={styles.RightContainer}>
-        <Icon type="facebook"/>
-        <Icon type="instagram"/>
-        <Icon type="youtube"/>
+        <Icon type="facebook" />
+        <Icon type="instagram" />
+        <Icon type="youtube" />
       </div>
     </nav>
   );

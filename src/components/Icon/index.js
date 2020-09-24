@@ -43,5 +43,5 @@ export default function Icon({ type }) {
 }
 
 Icon.propTypes = {
-  type: PropTypes.oneOf(['instagram', 'facebook', 'youtube'])
+  type: PropTypes.oneOf(['instagram', 'facebook', 'youtube']).isRequired,
 };
