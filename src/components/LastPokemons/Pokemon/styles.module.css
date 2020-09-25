@@ -1,0 +1,40 @@
+.Pokemon {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  width: 168px;
+  height: 187px;
+  margin: 12px 9.5px;
+  transition: transform 0.15s ease-in-out;
+}
+
+.Pokemon:hover {
+  transform: scale(1.1);
+}
+
+.Pokemon img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.Pokemon h5 {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  bottom: 30px;
+  color: #ff6b18;
+  font-weight: 700;
+}
+
+@media (min-width: 1366px) {
+  .Pokemon:first-child {
+    margin-left: 0;
+  }
+  .Pokemon:first-child {
+    margin-right: 0;
+  }
+}

@@ -102,9 +102,9 @@
 
 @media (min-width: 1366px) {
   .MainCarousel {
-    width: 81%;
+    width: 83%;
     height: 550px;
-    margin: 40px auto;
+    margin: 40px auto 0px auto;
   }
 
   .MainCarousel article {

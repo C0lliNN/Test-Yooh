@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Arrow from '../Arrow';
 import styles from './styles.module.css';
 import heroImage from '../../assets/images/hero-banner__image.png';

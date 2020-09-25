@@ -1,0 +1,43 @@
+.LastPokemons {
+  padding: 20px;
+}
+
+.LastPokemons ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  animation: slide-down 1s ease;
+}
+
+.LastPokemons h3 {
+  font-size: 1.5em;
+  color: #72808e;
+}
+
+@media (min-width: 1366px) {
+  .LastPokemons {
+    padding-top: 0;
+    width: 80%;
+    margin: auto;
+  }
+  .LastPokemons h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #72808e;
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

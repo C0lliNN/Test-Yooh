@@ -15,13 +15,30 @@
   align-items: center;
 }
 
+.RightContainer {
+  display: flex;
+  align-items: center;
+}
+
+.ButtonContainer {
+  display: none;
+  margin-right: 45px;
+}
+
 .MenuIcon {
   margin-right: 30px;
 }
 
 @media (min-width: 1366px) {
+  .Navbar {
+    padding-left: 0;
+    padding-right: 0;
+  }
   .Navbar > div {
     width: 80%;
     margin: auto;
+  }
+  .ButtonContainer {
+    display: block;
   }
 }
