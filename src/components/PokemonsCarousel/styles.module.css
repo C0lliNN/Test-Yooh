@@ -1,0 +1,84 @@
+
+.PokemonsCarousel h5 {
+  padding: 20px;
+  color: #72808e;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.Carousel {
+  overflow-x: hidden;
+  position: relative;
+  width: 390px;
+  margin: auto;
+  height: 304px;
+}
+
+.LeftArrow,
+.RightArrow {
+  position: absolute;
+  margin-top: -5%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.LeftArrow {
+  left: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(238, 238, 238, 1) 50%,
+    rgba(0, 0, 0, 0) 50%
+  );
+}
+
+.RightArrow {
+  right: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(238, 238, 238, 1) 50%
+  );
+}
+
+.HideLeft {
+  transform: translateX(-100%);
+}
+
+.HideRight {
+  transform: translateX(100%);
+}
+
+.Circles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #C4C4C4;
+  margin: auto 4px;
+}
+
+.ActiveCircle {
+  background-color:  #FF6B18;
+}
+
+@media(min-width: 768px) {
+  .Carousel {
+    width: 468px;
+    height: 365px;
+  }
+}
+
+@media(min-width: 1366px) {
+  .PokemonsCarousel {
+    display: none;
+  }
+}

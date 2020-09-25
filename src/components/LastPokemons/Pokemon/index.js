@@ -3,10 +3,11 @@ import React from 'react';
 import styles from './styles.module.css';
 
 export default function Pokemon({ name, photo }) {
+  const nameCapitalized = name.charAt(0).toUpperCase() + name.slice(1);
   return (
     <li className={styles.Pokemon}>
-      <img src={photo} alt={name} />
-      <h5>{name}</h5>
+      <img src={photo} alt={nameCapitalized} />
+      <h5>{nameCapitalized}</h5>
     </li>
   );
 }

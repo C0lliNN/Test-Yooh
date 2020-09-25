@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Arrow from '../Arrow';
 import styles from './styles.module.css';
 import heroImage from '../../assets/images/hero-banner__image.png';
 import CallToAction from '../CallToAction';
+import useActiveIndex from '../../hooks/use-active-index';
 
 // This constant is defined outside of the React component
 // to prevent the unnecessary work of declaring it in each render cycle
@@ -22,19 +23,8 @@ const data = [
 ];
 
 export default function MainCarousel() {
-  const [active, setActive] = useState(0);
-
-  function incrementActiveIndex() {
-    if (active < data.length - 1) {
-      setActive(active + 1);
-    }
-  }
-
-  function decrementActiveIndex() {
-    if (active > 0) {
-      setActive(active - 1);
-    }
-  }
+  // prettier-ignore
+  const { active, incrementActiveIndex, decrementActiveIndex } = useActiveIndex(data);
 
   return (
     <section className={styles.MainCarousel}>
