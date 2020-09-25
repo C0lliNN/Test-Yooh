@@ -1,0 +1,166 @@
+.MainCarousel {
+  position: relative;
+  height: 592px;
+  overflow-x: hidden;
+}
+
+.MainCarousel h2,
+.MainCarousel h3,
+.MainCarousel h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.MainCarousel article {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.5s transform ease-in-out;
+}
+
+.InfoContainer {
+  width: 50%;
+  margin-left: 5%;
+  box-sizing: border-box;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.InfoContainer h3 {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+.InfoContainer h2 {
+  font-size: 2em;
+}
+
+.InfoContainer p {
+  font-size: 0.875em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.HeroImage {
+  position: absolute;
+  top: 35%;
+  width: 320px;
+  height: 320px;
+  transform: translateX(40%);
+  z-index: 0;
+}
+
+.HideLeft {
+  transform: translateX(-100%);
+}
+
+.HideRight {
+  transform: translateX(100%);
+}
+
+.LeftArrow {
+  position: absolute;
+  z-index: 50;
+  bottom: 5%;
+  right: 52%;
+}
+
+.RightArrow {
+  position: absolute;
+  z-index: 50;
+  bottom: 5%;
+  left: 52%;
+}
+
+@media (min-width: 375px) {
+  .HeroImage {
+    transform: translateX(65%);
+  }
+}
+
+@media (min-width: 768px) {
+  .MainCarousel article {
+    justify-content: space-around;
+  }
+
+  .InfoContainer h2 {
+    font-size: 3em;
+  }
+  .InfoContainer h3 {
+    font-size: 1.5em;
+  }
+
+  .HeroImage {
+    position: relative;
+    top: 0;
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 1366px) {
+  .MainCarousel {
+    width: 81%;
+    height: 550px;
+    margin: 40px auto;
+  }
+
+  .MainCarousel article {
+    background: linear-gradient(
+      0deg,
+      rgba(238, 238, 238, 1) 18%,
+      rgba(0, 0, 0, 0) 18%
+    );
+  }
+
+  .InfoContainer {
+    width: 25%;
+    margin-top: -9%;
+    margin-left: 0;
+  }
+
+  .InfoContainer p {
+    margin-bottom: 50px;
+  }
+
+  .HeroImage {
+    width: 479px;
+    height: 479px;
+  }
+
+  .LeftArrow {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 56px;
+    z-index: 100;
+
+    background: linear-gradient(
+      90deg,
+      rgba(238, 238, 238, 1) 50%,
+      rgba(0, 0, 0, 0) 50%
+    );
+  }
+
+  .LeftArrow button,
+  .RightArrow button {
+    margin-top: 205px;
+  }
+
+  .RightArrow {
+    top: 0;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    width: 56px;
+    z-index: 100;
+
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(238, 238, 238, 1) 50%
+    );
+  }
+}

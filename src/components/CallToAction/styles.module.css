@@ -1,0 +1,12 @@
+.CallToAction {
+  background-color: #FF6B18;
+  border-radius: 53px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1em;
+  padding: 15px 32px;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}

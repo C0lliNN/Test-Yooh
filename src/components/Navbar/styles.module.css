@@ -1,9 +1,13 @@
 .Navbar {
   background-color: #ffffff;
+  padding: 20px;
+}
+
+.Navbar > div {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
 }
 
 .LeftContainer {
@@ -13,4 +17,11 @@
 
 .MenuIcon {
   margin-right: 30px;
+}
+
+@media (min-width: 1366px) {
+  .Navbar > div {
+    width: 80%;
+    margin: auto;
+  }
 }

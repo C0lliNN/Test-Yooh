@@ -1,3 +1,17 @@
 .Icon {
-  margin: auto 20px;
+  margin: auto 10px;
+}
+
+.Icon:last-child {
+  margin-right: 0;
+}
+
+.Icon:first-child {
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .Icon {
+    margin: auto 20px;
+  }
 }

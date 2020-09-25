@@ -7,14 +7,16 @@ import Icon from '../Icon';
 export default function Navbar() {
   return (
     <nav className={styles.Navbar}>
-      <div className={styles.LeftContainer}>
-        <img src={menuIcon} alt="" className={styles.MenuIcon} />
-        <Logo />
-      </div>
-      <div className={styles.RightContainer}>
-        <Icon type="facebook" />
-        <Icon type="instagram" />
-        <Icon type="youtube" />
+      <div>
+        <div className={styles.LeftContainer}>
+          <img src={menuIcon} alt="" className={styles.MenuIcon} />
+          <Logo />
+        </div>
+        <div className={styles.RightContainer}>
+          <Icon type="facebook" />
+          <Icon type="instagram" />
+          <Icon type="youtube" />
+        </div>
       </div>
     </nav>
   );
