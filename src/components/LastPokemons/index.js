@@ -15,16 +15,19 @@ export default function LastPokemons() {
     try {
       const firstResponse = await api.get('/pokemon?limit=20?offset=20');
 
-      // Picking the last 6 items. Some of the first 6 are the same
-      // as the PokemonsCarousel Component. So, I did in this way to no repeat pokemons
-      // in the page
+      /* Picking the last 6 items. Some of the first 14 are the same
+       * as the PokemonsCarousel Component. So, I did in this way to no repeat pokemons
+       * in the page */
+
+      /* It is necessary to make other requests because the request above
+       * does not return the pokemon photo */
 
       const requests = firstResponse.data.results
         .filter((_, index) => index > 13)
-        .map((result) => api.get(`/pokemon/${result.name}`));
+        .map((result) => api.get(`/pokemon/${result.name}`)); // return an array of axios request
 
-      const results = await Promise.all(requests);
-      const pokemonsList = results.map((r) => ({
+      const responses = await Promise.all(requests);
+      const pokemonsList = responses.map((r) => ({
         name: r.data.name,
         photo: r.data.sprites.other['official-artwork'].front_default,
       }));

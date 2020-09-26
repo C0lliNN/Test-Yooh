@@ -54,18 +54,19 @@ export default function PokemonsCarousel({ pokemons }) {
         </div>
       </div>
       <div className={styles.Circles}>
-        {pokemons.map((_, index) => {
+        {pokemons.map((pokemon, index) => {
           const classes = [styles.Circle];
 
           if (index === active) {
             classes.push(styles.ActiveCircle);
           }
           return (
-            <div
-              key={index}
+            <button
+              type="button"
+              key={pokemon.name}
               onClick={() => setActive(index)}
               className={classes.join(' ')}
-            ></div>
+            />
           );
         })}
       </div>

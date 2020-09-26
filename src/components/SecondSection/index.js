@@ -44,6 +44,9 @@ export default function SecondSection() {
   } else if (pokemons && pokemons.length) {
     content = (
       <>
+        {/* PokemonsCarousel will be visible if width < 1366.
+         Otherwise, PokemonsList will be visible */}
+
         <PokemonsCarousel pokemons={pokemons} />
         <PokemonsList pokemons={pokemons} />
       </>

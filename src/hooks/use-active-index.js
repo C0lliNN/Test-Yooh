@@ -15,5 +15,7 @@ export default function useActiveIndex(data) {
     }
   }
 
-  return { active, setActive, incrementActiveIndex, decrementActiveIndex };
+  return {
+    active, setActive, incrementActiveIndex, decrementActiveIndex,
+  };
 }

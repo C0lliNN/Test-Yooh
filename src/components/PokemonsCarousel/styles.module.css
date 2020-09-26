@@ -65,6 +65,8 @@
   cursor: pointer;
   background-color: #C4C4C4;
   margin: auto 4px;
+  border: none;
+  outline: none;
 }
 
 .ActiveCircle {
