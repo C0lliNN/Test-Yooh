@@ -5,7 +5,7 @@
   border-radius: 6px;
   width: 168px;
   height: 187px;
-  margin: 12px 9.5px;
+  margin: 16px 0px;
   transition: transform 0.15s ease-in-out;
 }
 
@@ -28,13 +28,4 @@
   bottom: 30px;
   color: #ff6b18;
   font-weight: 700;
-}
-
-@media (min-width: 1366px) {
-  .Pokemon:first-child {
-    margin-left: 0;
-  }
-  .Pokemon:first-child {
-    margin-right: 0;
-  }
 }

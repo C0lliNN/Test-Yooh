@@ -1,2 +1,10 @@
-.SecondSection {
+@media(min-width: 1366px) {
+  .SecondSection {
+    width: 80%;
+    margin: auto;
+    margin-top: 16px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
 }

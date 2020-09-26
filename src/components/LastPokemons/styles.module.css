@@ -1,5 +1,5 @@
 .LastPokemons {
-  padding: 20px;
+  padding: 24px;
 }
 
 .LastPokemons ul {
@@ -15,6 +15,7 @@
 
 .LastPokemons h3 {
   font-size: 1.5em;
+  padding-left: 5px;
   color: #72808e;
 }
 
@@ -29,6 +30,10 @@
     font-size: 1.5em;
     color: #72808e;
   }
+}
+
+.LastPokemons ul {
+  justify-content: space-between;
 }
 
 @keyframes slide-down {

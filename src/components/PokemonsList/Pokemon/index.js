@@ -4,12 +4,13 @@ import { capitalize } from '../../../utility';
 import styles from './styles.module.css';
 
 export default function Pokemon({ name, photo }) {
-  const nameCapitalized = capitalize(name);
   return (
-    <li className={styles.Pokemon}>
-      <img src={photo} alt={nameCapitalized} />
-      <h5>{nameCapitalized}</h5>
-    </li>
+    <article className={styles.Pokemon}>
+      <h4>{capitalize(name)}</h4>
+      <div>
+        <img src={photo} alt={name} />
+      </div>
+    </article>
   );
 }
 

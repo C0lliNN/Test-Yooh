@@ -1,0 +1,14 @@
+.PokemonsList {
+  display: none;
+}
+
+@media(min-width: 1366px) {
+  .PokemonsList {
+    width: 552px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}

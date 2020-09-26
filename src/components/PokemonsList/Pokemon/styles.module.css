@@ -1,0 +1,24 @@
+.Pokemon {
+  margin-bottom: 32px;
+}
+
+.Pokemon h4 {
+  font-size: 1.5em;
+  margin: 0;
+  margin-bottom: 20px;
+  color: #72808E;
+}
+
+.Pokemon div {
+  width: 264px;
+  height: 293px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.Pokemon img {
+  display: block;
+  width: 100%;
+}

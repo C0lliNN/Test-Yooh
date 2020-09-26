@@ -1,0 +1,60 @@
+.InfoDiv {
+  width: 100%;
+  background-color: #ffd029;
+  margin-top: 60px;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.InfoDiv h3,
+.InfoDiv p {
+  margin: 0;
+}
+
+.InfoDiv h3 {
+  color: #FF6B18;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.InfoDiv p {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.ButtonContainer {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+.ImagesContainer {
+  display: none;
+}
+
+.ImagesContainer img {
+  display: block;
+}
+
+@media(min-width: 1366px) {
+  .InfoDiv {
+    width: 50%;
+    margin-top: 51px; 
+  }
+  
+  .ImagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    right: 0;
+  }
+
+  .ButtonContainer {
+    text-align: left;
+    margin-bottom: 48px;
+  }
+}
