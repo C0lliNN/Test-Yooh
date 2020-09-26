@@ -87,6 +87,10 @@
     align-items: center;
   }
 
+  .Email {
+    margin-right: 35px;
+  }
+
   .Icons {
     margin: 0;
   }

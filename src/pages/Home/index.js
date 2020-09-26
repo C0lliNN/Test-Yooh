@@ -2,13 +2,13 @@ import React from 'react';
 import Footer from '../../components/Footer';
 import LastPokemons from '../../components/LastPokemons';
 import MainCarousel from '../../components/MainCarousel';
-import Navbar from '../../components/Navbar';
+import Header from '../../components/Header';
 import SecondSection from '../../components/SecondSection';
 
 export default function Home() {
   return (
     <main>
-      <Navbar />
+      <Header />
       <MainCarousel />
       <LastPokemons />
       <SecondSection />

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function CallToAction({ onClick }) {
+function CallToAction({ onClick }) {
   return (
     <button type="button" className={styles.CallToAction} onClick={onClick}>
       Call to Action
@@ -17,3 +17,5 @@ CallToAction.propTypes = {
 CallToAction.defaultProps = {
   onClick: () => {},
 };
+
+export default React.memo(CallToAction);

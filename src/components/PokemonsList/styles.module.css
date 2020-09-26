@@ -4,7 +4,7 @@
 
 @media(min-width: 1366px) {
   .PokemonsList {
-    width: 552px;
+    width: 50%;
     margin-right: 24px;
     display: flex;
     align-items: center;

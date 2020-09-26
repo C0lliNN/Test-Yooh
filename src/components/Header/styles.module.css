@@ -1,6 +1,6 @@
 .Navbar {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 16px;
 }
 
 .Navbar > div {
@@ -27,12 +27,15 @@
 
 .MenuIcon {
   margin-right: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 @media (min-width: 1366px) {
   .Navbar {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 16px 0px;
   }
   .Navbar > div {
     width: 80%;

@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import arrowLeft from '../../assets/images/arrow-left.svg';
 import arrowRight from '../../assets/images/arrow-right.svg';
 
-export default function Arrow({ direction, onClick }) {
+function Arrow({ direction, onClick }) {
   let icon = null;
 
   switch (direction) {
@@ -27,3 +27,5 @@ Arrow.propTypes = {
   direction: PropTypes.oneOf(['left', 'right']).isRequired,
   onClick: PropTypes.func.isRequired,
 };
+
+export default React.memo(Arrow);

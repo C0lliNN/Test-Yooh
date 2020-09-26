@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './styles.module.css';
 
-export default function ErrorMessage({ message }) {
+function ErrorMessage({ message }) {
   return (
     <div className={styles.ErrorMessage}>
       <p>
@@ -15,3 +15,5 @@ export default function ErrorMessage({ message }) {
 ErrorMessage.propTypes = {
   message: PropTypes.string.isRequired,
 };
+
+export default React.memo(ErrorMessage);

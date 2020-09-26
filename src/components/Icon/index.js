@@ -5,7 +5,7 @@ import facebookIcon from '../../assets/images/facebook.svg';
 import instagramIcon from '../../assets/images/instagram.svg';
 import youtubeIcon from '../../assets/images/youtube.svg';
 
-export default function Icon({ type }) {
+function Icon({ type }) {
   let icon = null;
   let link = null;
 
@@ -45,3 +45,5 @@ export default function Icon({ type }) {
 Icon.propTypes = {
   type: PropTypes.oneOf(['instagram', 'facebook', 'youtube']).isRequired,
 };
+
+export default React.memo(Icon);

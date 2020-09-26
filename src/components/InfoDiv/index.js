@@ -4,7 +4,7 @@ import CallToAction from '../CallToAction';
 import pikachu from '../../assets/images/pikachu.png';
 import pokebola from '../../assets/images/pokerbola.png';
 
-export default function InfoDiv() {
+function InfoDiv() {
   return (
     <div className={styles.InfoDiv}>
       <h3>Teste Frontend</h3>
@@ -27,9 +27,11 @@ export default function InfoDiv() {
         <CallToAction />
       </div>
       <div className={styles.ImagesContainer}>
-        <img src={pokebola} alt="Pokebola" />
+        <img src={pokebola} alt="Pokebola" className={styles.Pokebola} />
         <img src={pikachu} alt="Pikachu" />
       </div>
     </div>
   );
 }
+
+export default React.memo(InfoDiv);

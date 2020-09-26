@@ -2,6 +2,10 @@
   margin-bottom: 32px;
 }
 
+.Pokemon:hover div {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .Pokemon h4 {
   font-size: 1.5em;
   margin: 0;
@@ -16,9 +20,18 @@
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
+  transition: box-shadow 0.2s ease-in-out;
 }
 
 .Pokemon img {
   display: block;
-  width: 100%;
+  width: 264px;
+  margin: auto;
+}
+
+
+@media(min-width: 1650px) {
+  .Pokemon div {
+    width: 320px;
+  }
 }

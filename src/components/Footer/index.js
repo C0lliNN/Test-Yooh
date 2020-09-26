@@ -5,7 +5,7 @@ import Icon from '../Icon';
 import logoYooh from '../../assets/images/logo-yooh.svg';
 import emailIcon from '../../assets/images/email.svg';
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className={styles.Footer}>
       <div className={styles.Container}>
@@ -36,3 +36,5 @@ export default function Footer() {
     </footer>
   );
 }
+
+export default React.memo(Footer);
